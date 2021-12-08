@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>脱离文档流</title>
+</head>
+<!--设置块元素为float时，其文字-->
+<style type="text/css">
+    #outofnormal {
+        width: 200px;
+        background-color: cyan;
+        padding: 10px;
+        position: absolute;
+    }
+    h2 {
+        width: 500px;
+        height: 100px;
+        background-color: #ff0000;
+    }
+
+</style>
+<body>
+
+<body>
+<!--脱离文档流解释为：当一个元素脱离文档流之后，其他的块级元素的定位会忽略该块级元素而进行定位,但是里面的文字却不会忽略脱离文档流的块级元素,position则相反-->
+<div id="outofnormal">
+    Out of normal:
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse impedit autem praesentium magni culpa, amet corporis, veniam consequatur voluptates temporibus. Voluptates eius similique asperiores cupiditate fugit hic atque quisquam?
+</div>
+<h2>lllllllllllllllllllllllllllllllllllllllllllll</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum praesentium nam tempora beatae quis nobis laboriosam alias aliquid, tenetur exercitationem. Odio, aperiam, illo! Eveniet natus dignissimos architecto velit eligendi id!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem reprehenderit velit nam delectus distinctio at unde aliquid officia illo, tempore vitae et incidunt non, ut eos nesciunt quaerat. Enim, minus.</p>
+</body>
+
+</body>
+</html>
